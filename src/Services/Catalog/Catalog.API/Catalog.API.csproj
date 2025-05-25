@@ -11,6 +11,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Products\NewFolder1\**" />
+    <Compile Remove="Products\NewFolder2\**" />
+    <Content Remove="Products\NewFolder1\**" />
+    <Content Remove="Products\NewFolder2\**" />
+    <EmbeddedResource Remove="Products\NewFolder1\**" />
+    <EmbeddedResource Remove="Products\NewFolder2\**" />
+    <None Remove="Products\NewFolder1\**" />
+    <None Remove="Products\NewFolder2\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Marten" Version="7.40.4" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.22.1-Preview.1" />
 	 <PackageReference Include="Carter" Version="8.2.1" />
